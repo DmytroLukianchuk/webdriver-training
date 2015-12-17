@@ -1,4 +1,4 @@
-package com.lukiacnhuk.webdriver;
+package com.lukiacnhuk.webdriver.taskone;
 
 import org.junit.Test;
 
