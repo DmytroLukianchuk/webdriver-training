@@ -13,22 +13,22 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Main {
 
     public static String getSourceChrome(String url) {
-        WebDriver chrm = new ChromeDriver();
-        chrm.get(url);
-        String pageSource = chrm.getPageSource();
-        chrm.close();
-        chrm.quit();
+        WebDriver chromeDriver = new ChromeDriver();
+        chromeDriver.get(url);
+        String pageSource = chromeDriver.getPageSource();
+        chromeDriver.close();
+        chromeDriver.quit();
 
         return pageSource;
 
     }
 
     public static String getSourceFF(String url) {
-        WebDriver ff = new FirefoxDriver();
-        ff.get(url);
-        String pageSource = ff.getPageSource();
-        ff.close();
-        ff.quit();
+        WebDriver fireFoxDriver = new FirefoxDriver();
+        fireFoxDriver.get(url);
+        String pageSource = fireFoxDriver.getPageSource();
+        fireFoxDriver.close();
+        fireFoxDriver.quit();
 
         return pageSource;
     }
